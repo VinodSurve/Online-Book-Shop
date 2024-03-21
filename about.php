@@ -20,45 +20,6 @@ session_start();
   <!--css files-->
   <!-- <link rel="stylesheet" href="./css/style1.css"> -->
   <link rel="stylesheet" href="./css/style1.css">
-
-  <style>
-    .logo {
-      width: 100%;
-      max-width: 50px;
-      /* Adjust the max-width as needed */
-      height: auto;
-      border-radius: 25px;
-    }
-
-
-    body {
-      /* Height of the fixed navbar */
-      overflow-x: hidden;
-    }
-
-    .title2 {
-      min-height: 30vh;
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      background: url('./images/heading-bg.webp') no-repeat;
-      background-size: cover;
-      background-position: center;
-      text-align: center;
-    }
-
-    /* Add responsive styles */
-    @media screen and (max-width: 768px) {
-      .title2 {
-        height: auto;
-        /* Adjust height as needed */
-        padding: 5vw;
-        /* Reduce padding for smaller screens */
-      }
-    }
-  </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     $(document).ready(function() {

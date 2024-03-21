@@ -19,17 +19,7 @@ session_start();
 
     <!--css files-->
       <link rel="stylesheet" href="./css/style1.css">
-<style>
-      .title {
-   height: 25vw;
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./book.jpg');
-   text-align: center;
-   color: white;
-   padding: 10vw;
- }
- 
-</style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script>
         $(document).ready(function() {
