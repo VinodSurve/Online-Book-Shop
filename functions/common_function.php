@@ -24,9 +24,7 @@ function getproducts()
         <img src='./admin/product_images/$product_image' class='card-img-top' alt'...'>
         <div class='card-body'>
           <h5 class='card-title'>$product_title</h5>
-          <p class='card-text'>$product_description</p>
           <p class='card-text'>Price: $product_price</p>
-          <p class='card-text'>By: $product_author</p>
           <a href='index.php?add_to_cart=$product_id' class='btn btn-info click2'>Add to cart</a>
           <a href='product_details.php?product_id=$product_id' class='btn btn-secondary click1'>View more</a>
         </div>
@@ -248,27 +246,28 @@ function view_detail()
           echo "                <div class='row'>
             <div class='col-md-4'>
                 <!-- card -->
-                <div class='row g-0 bg-body-secondary position-relative'>
+                <div class='row ms-2 border border-2 rounded-3'>
                     <div class='col-md-6 mb-md-0 p-md-4 '>
-                        <img src='./admin/product_images/$product_image' class='w-100' alt='...'>
+                        <img src='./admin/product_images/$product_image' class='w-500 ' alt='...'>
                     </div>
-                    <div class='col-md-6 p-4 ps-md-0'>
-                        <h5 class='mt-0'>$product_title</h5>
-                        <p>$product_description</p>
-                        <p>Price: $product_price</p>
-                        <p>By: $product_author</p>
-                        <a href='index.php?add_to_cart=$product_id' class='btn btn-info'>Add to cart</a>
-                        <a href='index.php' class='btn btn-secondary'>Go Home</a>
-                    </div>
+                    
                 </div>
             </div>";
-
+        
           echo "<div class='col-md-7'>
-            <!-- related card -->
-            <div class='row'>
-                <div class='col-md-12'>
-                    <h4 class='text-center mt-1 text-info mb-5'>Related Products</h4>
-                </div>";
+                  <div class='row'>
+                    <div class='col-md-12'>
+                    <div class='col-md-6 p-4 ps-md-5 '>
+                    <h1 class='mt-0 size'>$product_title</h1>
+                    <p>$product_description</p>
+                    <p>Price: $product_price</p>
+                    <p>By: $product_author</p>
+                    <a href='index.php?add_to_cart=$product_id' class='btn btn-info'>Add to cart</a>
+                    <a href='index.php' class='btn btn-secondary'>Go Home</a>
+                    </div>
+                  </div>
+          <!-- related card -->
+                <h4 class='text-center mt-1 text-info mb-5'>Related Products</h4>";
           if (isset($_GET['product_id'])) {
             $product_id = intval($_GET['product_id']);
             $select_query = "select category_id,subcat_id from `products` where product_id=$product_id ";

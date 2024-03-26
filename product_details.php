@@ -19,7 +19,11 @@ session_start();
 
     <!--css files-->
       <link rel="stylesheet" href="./css/style1.css">
-
+<style>
+    .size{
+  font-size:100px;
+ }
+</style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
@@ -97,14 +101,17 @@ include('include/header.php');
                 </ul>
             </div>
             <div class="col-md-10">
-                <!-- fetching products -->
-                <?php
+                <div class="row">
+<!-- fetching products -->
+<?php
                 // calling function
 
                 view_detail();
                 get_unqiue_category();
                 get_unqiue_subcategory();
                 ?>
+                </div>
+                
             </div>
         </div>
     </div>
