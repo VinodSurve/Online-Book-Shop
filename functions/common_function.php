@@ -19,12 +19,12 @@ function getproducts()
         $product_price = $row['product_price'];
         $category_id = $row['category_id'];
         $subcat_id = $row['subcat_id'];
-        echo "        <div class='col-md-3 mb-2'>
+        echo "        <div class='col-md-3 mb-2 me-4'>
       <div class='card' style='width: 18rem;'>
-        <img src='./admin/product_images/$product_image' class='card-img-top' alt'...'>
+        <img src='./admin/product_images/$product_image' class='card-img-top p-2' alt='..'>
         <div class='card-body'>
           <h5 class='card-title'>$product_title</h5>
-          <p class='card-text'>Price: $product_price</p>
+          <p class='card-text'>Price: ₹$product_price</p>
           <a href='index.php?add_to_cart=$product_id' class='btn btn-info click2'>Add to cart</a>
           <a href='product_details.php?product_id=$product_id' class='btn btn-secondary click1'>View more</a>
         </div>
@@ -55,16 +55,16 @@ function get_all_products()
         $product_price = $row['product_price'];
         $category_id = $row['category_id'];
         $subcat_id = $row['subcat_id'];
-        echo "        <div class='col-md-3 mb-2'>
+        echo "        <div class='col-md-3 mb-2 me-3'>
       <div class='card' style='width: 18rem;'>
-        <img src='./admin/product_images/$product_image' class='card-img-top' alt'...'>
+        <img src='./admin/product_images/$product_image' class='card-img-top p-2' alt='..'>
         <div class='card-body'>
           <h5 class='card-title'>$product_title</h5>
           <p class='card-text'>$product_description</p>
           <p class='card-text'>Price: $product_price</p>
           <p class='card-text'>By: $product_author</p>
-          <a href='index.php?add_to_cart=$product_id' class='btn btn-info'>Add to cart</a>
-          <a href='product_details.php?product_id=$product_id' class='btn btn-secondary'>View more</a>
+          <a href='index.php?add_to_cart=$product_id' class='btn btn-info click2'>Add to cart</a>
+          <a href='product_details.php?product_id=$product_id' class='btn btn-secondary click1'>View more</a>
         </div>
       </div>
     </div>";
@@ -208,14 +208,14 @@ function search_products()
       $subcat_id = $row['subcat_id'];
       echo "        <div class='col-md-3 mb-2'>
     <div class='card' style='width: 18rem;'>
-      <img src='./admin/product_images/$product_image' class='card-img-top' alt'...'>
+      <img src='./admin/product_images/$product_image' class='card-img-top p-2' alt'...'>
       <div class='card-body'>
         <h5 class='card-title'>$product_title</h5>
         <p class='card-text'>$product_description</p>
         <p class='card-text'>Price: $product_price</p>
         <p class='card-text'>By: $product_author</p>
-        <a href='index.php?add_to_cart=$product_id' class='btn btn-info'>Add to cart</a>
-        <a href='product_details.php?product_id=$product_id' class='btn btn-secondary'>View more</a>
+        <a href='index.php?add_to_cart=$product_id' class='btn btn-info click2'>Add to cart</a>
+        <a href='product_details.php?product_id=$product_id' class='btn btn-secondary click1'>View more</a>
         </div>
     </div>
   </div>";
