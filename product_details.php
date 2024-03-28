@@ -23,6 +23,11 @@ session_start();
     .size{
   font-size:100px;
  }
+ .card-img{
+   width:100%;
+   height:350px;
+   object-fit:contain;
+}
 </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>

@@ -247,8 +247,8 @@ function view_detail()
             <div class='col-md-4'>
                 <!-- card -->
                 <div class='row ms-2 border border-2 rounded-3'>
-                    <div class='col-md-6 mb-md-0 p-md-4 '>
-                        <img src='./admin/product_images/$product_image' class='w-500 ' alt='...'>
+                    <div class='col-md-6 mb-md-0 p-md-4 card-img '>
+                        <img src='./admin/product_images/$product_image' class='card-img-top' alt='...'>
                     </div>
                     
                 </div>
